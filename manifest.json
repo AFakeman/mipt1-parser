@@ -1,0 +1,32 @@
+[
+    {
+        "section": "Механика",
+        "filename": "mechanics.tex",
+        "start_id": 0,
+        "counts": [2, 1, 2, 2, 1, 2, 3, 3, 3, 3]
+    },
+    {
+        "section": "Термодинамика",
+        "filename": "thermodynamics.tex",
+        "start_id": 22,
+        "counts": [3, 5, 4, 3, 2, 3, 3, 2, 2]
+    },
+    {
+        "section": "Электричество",
+        "filename": "electrodynamics.tex",
+        "start_id": 49,
+        "counts": [5, 3, 4, 3, 4, 3, 3, 4, 1, 3, 3, 3, 4]
+    },
+    {
+        "section": "Оптика",
+        "filename": "optics.tex",
+        "start_id": 92,
+        "counts": [5, 5, 2, 3, 4, 5, 3, 3]
+    },
+    {
+        "section": "Квантовая физика",
+        "filename": "quantum.tex",
+        "start_id": 122,
+        "counts": [4, 3, 5, 2, 1, 2, 1, 3, 2, 2, 2, 1, 2, 3, 2, 2, 2, 2, 2, 3]
+    }
+]
