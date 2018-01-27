@@ -11,6 +11,7 @@ class MyHTMLParser(HTMLParser):
     """
     Implicit assertions:
     1) We cannot have a paragraph in a paragraph
+    2) We do not have a --/--- words in text, only -
     """
 
     def __init__(self, imdir='img'):
@@ -90,7 +91,9 @@ class MyHTMLParser(HTMLParser):
     def handle_data(self, data):
         if self.in_short_content():
             if self.in_paragraph:
-                self.pending_paragraph += data.replace('^', '')
+                self.pending_paragraph += data.replace('^', '\^{}')\
+                                              .replace('_', '\_')\
+                                              .replace('-', r'\textendash{}')
             if self.tags['h1'] and not self.in_vk:
                 self.sections.append(data)
                 print(r'        \subsubsection{{{0}}}'.format(data), file=self.buffer)
